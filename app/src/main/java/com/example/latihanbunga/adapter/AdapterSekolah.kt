@@ -42,7 +42,7 @@ class AdapterSekolah(var activity: Activity, var data: ArrayList<SekolahModel>):
 
         // Menampilkan gambar menggunakan Glide
         Glide.with(context)
-            .load("http://10.234.150.35/laravel_1/storage/app/public/${a.foto}")
+            .load("http://192.168.59.245/laravel_1/storage/app/public/${a.foto}")
             .into(holder.foto)
     }
 

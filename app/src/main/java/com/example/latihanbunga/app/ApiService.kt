@@ -2,6 +2,7 @@ package com.example.latihanbunga.app
 
 
 import com.example.latihanbunga.model.BungaModel
+import com.example.latihanbunga.model.ResponseKue
 import com.example.latihanbunga.model.ResponseModel
 import com.example.latihanbunga.model.ResponseSekolah
 import retrofit2.Call
@@ -23,4 +24,7 @@ interface ApiService {
 
     @GET("sekolah")
     fun getSekolah(): Call<ResponseSekolah>
+
+    @GET("kue")
+    fun getKue(): Call<ResponseKue>
 }
